@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Index Page</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-image: url('headerBackground.jpg')
+            }
+            #topNavList ul{
+                list-style: none;
+            }
+            #topNavList ul li{
+                display: inline-block;
+            }
+            .block {
+                border-bottom:1px solid green;
+                border-radius: 5px;
+                height: 100px;
+            }
+            .content{
+                height:1000px;
+                border:2px dotted grey;
+                border-radius: 10px;
+                color:brown;
+                background-color:azure;
+            }
+            .section1{
+                text-indent: 10px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size:14px;
+                line-height: 12px;
+                color:sienna; 
+                text-align: left;
+            }
+            #bottomFooter{
+                text-align: center;
+                font-family: monospace;
+                font-style: italic;
+            }
+
+            #topLogo img{
+                position: absolute;
+                top: 0;
+                height:120px;
+                width:200px;
+
+            }
+        </style>
+    </head>
+    <body>
+    <header id="topHeader" class="block">
+        <div id="topLogo">
+            <a href="Index.html"><img src="logo.jpg" alt="Sample Logo" /></a>
+        </div>
+        <h1 style="text-align:center; color:blue;">Demo Page</h1>
+    </header>
+    <nav id="topNav">
+        <ul id="topNavList">
+            <li>
+                <a href="Index.html" target="_blank">Home</a>
+            </li>
+            <li>
+                <a href="about.html" title="About Page">About</a>
+            </li>
+            <li>
+                <a href="#" title="Feedback Page">Feedback</a>
+            </li>
+        </ul>
+
+    </nav>
+    <main id="mainContent" class="content">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html" >HTML</a>
+                </li>
+                <li>
+                    <a href="#JQuery">JQuery</a>
+                </li>    
+                <li>
+                    <a href="#CSS">CSS</a>
+                </li>    
+                
+            </ul>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a name="html">HTML introduction </a>
+        <p>
+            This is a HTML content.
+            This is a HTML content.
+            This is a HTML content.
+            This is a HTML content.
+            This is a HTML content.
+            This is a HTML content.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a name="JQuery">JQuery introduction </a>
+        <p>
+                This is a JQuery content.
+                This is a JQuery content.
+                This is a JQuery content.
+                This is a JQuery content.
+                This is a JQuery content.
+                This is a JQuery content.
+        </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <a name="CSS">CSS introduction </a>
+        <p>
+                    This is a CSS content.
+                    This is a CSS content.
+                    This is a CSS content.
+                    This is a CSS content.
+                    This is a CSS content.
+                    This is a CSS content.
+        </p>
+        <div>
+            <a href="javascript:void(0)" onclick="window.scrollTo(0,0)">Go to Top</a>
+        </div>
+    </main>
+    <footer id="bottomFooter" class="block">
+        <span>&copy; 2019</span>
+        <br>
+        <a href="mailto:abhijeet.karmaker@yahoo.com">Click me for feedback</a>
+    </footer>
+</body>
+</html>
