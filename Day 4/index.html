@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Index Page</title>
+        <meta charset="utf-8"/>
+        <style>
+            header{
+                height: 100px;
+                border: 1px solid blue;
+                border-radius: 10px;
+                padding: 10px 10px;
+                margin: 5px;
+            }
+            header h1{
+                text-align: center;
+                font-style: italic;
+                font-family: monospace;
+            }
+            #topNav{
+                float: right;
+            }
+            #topNav ul{
+                list-style: none;
+            }
+            #topNav ul li{
+                display: inline-block;
+            }
+            #sidebar{
+                width: 20%;
+                min-height: 1000px;
+                border: 1px solid green;
+                border-radius: 10px;
+                float: left;
+                padding: 10px 10px;
+                margin: 5px;
+            }
+            #main-content{
+                width: 75%;
+                min-height: 1000px;
+                border: 1px solid green;
+                border-radius: 10px;
+                float: right;
+                padding: 10px 10px;
+                margin: 5px;
+            }
+            #footer{
+                height: 50px;
+                border: 1px solid blue;
+                border-radius: 10px;
+                padding: 10px 10px;
+                margin: 5px;
+                text-align: center;
+            }
+            #footer span{
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            #clear-block{
+                clear:both;
+            }
+            ol li{
+                color: blue;
+                font-size: 15px;
+                font-family: monospace;
+            }
+            ul#HTML-Only li{
+                color:red;
+                font-size: 20px;
+            }
+            ul#ul-2 li{
+                color:green;
+            }
+           
+            .ul-class{
+                line-height: 40px;
+            }
+            .ol-class{
+                line-height: 20px;
+            }
+            DL DT {
+                font-weight: bold;
+                color:grey;
+            }
+            DL DT DD{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 10px;
+                font-style: italic;
+            }
+            table#listData{
+                border: 2px solid goldenrod;
+                border-radius: 10px;
+                padding:10px 10px;
+                width: 100%;
+            }            
+            table#listData thead tr{
+               
+                background-color: bisque;
+            }
+            table#listData tbody tr td {
+                border: 2px solid blueviolet;
+            }
+            table#listData tbody tr:last-child td{
+                text-align: center;
+            }
+            table#listData tr td{
+                padding: 10px 10px;
+            }
+            iframe{
+                width: 100%;
+                border: 1px solid aquamarine;
+                padding: 10px 10px;
+                margin: 10px 10px;
+                height:200px;
+            }
+            figure{
+                border:2px solid white;
+            }
+            figure img{
+                height: 100px;
+            }
+            figcaption{
+                text-align: center;
+                font-family: monospace;
+                color: green;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="topHeader">
+            <h1>List Demo</h1>
+            <nav id="topNav">
+                <ul>
+                    <li>
+                        <a href="about.html" target="sub-window">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" target="sub-window">Contact</a>
+                    </li>
+                    <li>
+                        <a href="Default.html" target="sub-window">Feedback</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="center-block">
+            <div id="sidebar">
+                <nav id=sideNav>
+                 <span>This is for nav</span>
+                </nav>
+                <figure>
+                        <img src="logo.jpg"/>
+                        <figcaption>Logo</figcaption>
+                </figure>
+                
+            </div>
+        </div>
+        <div id="main-content">
+            <section>
+                    <h2>Main conent goes here</h2>
+
+                    <h3>Order List Demo - UI Contents</h3>
+
+                    <ol class="ol-class">
+                        <li>HTML 5
+                            <ul type="square" id="HTML-Only" class="ul-class">
+                                <li>Basic tags</li>
+                                <li>Advanced tags</li>
+                                <li>Forms Tags</li>
+                            </ul>
+                        </li>
+                        <li>CSS</li>
+                        <li>JQuery</li>
+                    </ol>
+
+                    <h4>HTML Contents</h4>
+                    <ul id="ul-2" type="circle" class="ul-class">
+                        <li>HTML 5 Tags</li>
+                        <li>HTML Forms</li>
+                        <li>Table Tag</li>
+                    </ul>
+
+
+                    <h5>HTML List Demo - types</h5>
+                    <DL>
+                        <DT>Ordered List</DT>
+                            <DD>This list will show ordered items</DD>
+
+                        <DT>UnOrdered List</DT>
+                            <DD>This is will show with some bullets</DD>
+                    </DL>
+            </section>
+            <section>
+                    <h6>Table Demo</h6>
+
+                    <table id="listData">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>101</td>
+                                <td>Satya</td>
+                                <td>Palakurla</td>
+                                <td>Satya.palakurla@gmail.com</td>
+                            </tr>
+                            <tr>
+                                    <td>101</td>
+                                    <td>Satya</td>
+                                    <td>Palakurla</td>
+                                    <td>Satya.palakurla@gmail.com</td>
+                                </tr>
+                                <tr>
+                                        <td>101</td>
+                                        <td>Satya</td>
+                                        <td>Palakurla</td>
+                                        <td>Satya.palakurla@gmail.com</td>
+                                    </tr>
+                            <tr>
+                                <td colspan="4">
+                                    Employee Data
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <iframe src="Default.html" id="sub-window" name="sub-window">
+
+            </iframe>
+
+            <details>
+                <summary>HTML Notes</summary>
+                    <p>
+                        This is a sample Text.
+                        This is a sample Text.
+                        This is a sample Text.
+                        This is a sample Text.
+                        This is a sample Text.
+                        This is a sample Text.
+                        This is a sample Text.
+                        This is a sample Text.This is a sample Text.
+                        This is a sample Text.
+
+                    </p>
+
+            </details>
+        </div>
+
+        <div id="clear-block">
+
+        </div>
+
+        <footer id="footer">
+            <span>
+                &copy; 2019
+            </span>
+        </footer>
+    </body>
+</html>
