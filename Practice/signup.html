@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Sign Up Page
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header id="topHeader">
+      <img src="images/logo.jpg" />
+      <nav id="topNav">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="login.html">LOGIN</a>
+          </li>
+          <li>
+            <a href="signup.html">SIGN UP</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section id="mainSection">
+        <form id="frmSignUp" name="frmSignUp" class="signup-form">
+          <fieldset>
+            <legend>Registration Form</legend>
+            <div class="form-group">
+              <label for="txtFirstName">First Name:</label>
+              <input
+                type="text"
+                id="txtFirstName"
+                name="txtFirstName"
+                class="form-control"
+                autofocus
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="txtLastName">Last Name:</label>
+              <input
+                type="text"
+                id="txtLastName"
+                name="txtLastName"
+                class="form-control"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="txtDescription">Description:</label>
+              <textarea
+                id="txtDescription"
+                name="txtDescription"
+                rows="5"
+                cols="20"
+                class="form-control form-textarea"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="ddlGender">Gender:</label>
+              <select id="ddlGender" name="ddlGender" required>
+                <option selected="selected">Please Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="ddlListLanguage">Language:</label>
+              <select
+                id="ddlListLanguage"
+                name="ddlListLanguage"
+                multiple="multiple"
+                required
+              >
+                <option selected="selected">Please Select</option>
+                <option value="1">English</option>
+                <option value="2">Hindi</option>
+                <option value="3">Bengali</option>
+                <option value="4">French</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="txtCountry">Country:</label>
+              <input id="txtCountry" name="txtCountry" list="countryList" />
+              <datalist id="countryList">
+                <option value="India">India</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Cambodia">Cambodia</option>
+                <option value="Bangladesh">Bangladesh</option>
+              </datalist>
+            </div>
+            <div class="form-group">
+              <label for="rdVisa">Visa:</label>
+              <input
+                type="radio"
+                name="rdVisa"
+                id="rdCitizen"
+                value="Citizen"
+                required
+              />&nbsp; Citizen
+              <input
+                type="radio"
+                name="rdVisa"
+                id="rdResident"
+                value="Resident"
+                required
+              />
+              &nbsp; Resident
+            </div>
+            <div class="form-group">
+              <label for="txtDob">Date of Birth:</label>
+              <input type="date" id="txtDob" name="txtDob" required />
+            </div>
+            <div class="form-group">
+              <label for="cbAgree">Agree:</label>
+              <input type="checkbox" id="cbAgree" name="cbAgree" required /> Are
+              you agreeing?
+            </div>
+            <div class="form-group">
+              <button type="submit" class="form-control btn-primary">
+                Sign Up
+              </button>
+              &nbsp;
+              <button type="reset" class="form-control btn-warning">
+                Cancel
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <span>&copy; 2019 Abhijeet Karmaker</span>
+    </footer>
+  </body>
+</html>

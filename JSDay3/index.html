@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Demo</title>
+    <style>
+      #table table {
+        border: 2px solid green;
+      }
+      #table th {
+        background-color: aqua;
+        font-weight: bold;
+        color: brown;
+        padding: 5px 5px;
+        margin: 5px 5px;
+      }
+
+      #table tr,
+      td:nth-child(n) {
+        background-color: aquamarine;
+        padding: 5px 5px;
+        margin: 5px 5px;
+      }
+
+      #textbox {
+        padding: 5px 5px;
+        margin: 5px 5px;
+      }
+
+      #button {
+        padding: 5px 5px;
+      }
+
+      #spnMessage {
+        font-family: monospace;
+        color: blueviolet;
+        font-size: 20px;
+      }
+      #changeBgColor {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      }
+
+      #red {
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 50px solid #f00;
+      }
+      #blue {
+        width: 0;
+        height: 0;
+        border-left: 50px solid blue;
+        border-bottom: 50px solid transparent;
+        border-top: 50px solid transparent;
+      }
+      #yellow {
+        width: 0;
+        height: 0;
+        border-right: 50px solid yellow;
+        border-bottom: 50px solid transparent;
+        border-top: 50px solid transparent;
+        display: inline;
+        float: left;
+      }
+      #brown {
+        width: 0;
+        height: 0;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid brown;
+        border-left: 50px solid transparent;
+      }
+
+      #square{
+          width:100px;
+          height: 100px;
+          border:1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="message"></div>
+    <div id="table"></div>
+    <form>
+      <div id="textbox">
+        <label for="txtName">Name: </label>
+        <input type="text" id="txtName" name="txtName" /><br />
+      </div>
+      <div id="button">
+        <button type="button" id="btnOk">Click Me</button><br />
+      </div>
+      <span id="spnMessage"></span>
+      <div id="changeBgColor"></div>
+      <button type="button" id="changeColor">Change Color</button>
+      <div id="brown"></div>
+      <div id="yellow"></div>
+      <div id="square"></div>
+      <div id="blue"></div>
+      <div id="red"></div>
+    </form>
+<!--onsubmit="submitLogin(event)" -->
+    <form id="loginFrm" name="loginFrm" novalidate> 
+        <div>
+            <label for="txtUsername">Username: </label>
+            <input type="text" id="txtUsername" name="txtUsername" required/>
+        </div>
+        <div>
+                <label for="txtPassword">Password: </label>
+                <input type="password" id="txtPassword" name="txtPassword" required/>
+            </div>
+            <div>
+                <button type="submit">Login</button> 
+            </div>
+    </form>
+    <script src="scripts.js"></script>
+  </body>
+</html>

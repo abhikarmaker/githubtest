@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      Login Page
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header id="topHeader">
+      <img src="images/logo.jpg" />
+      <nav id="topNav">
+        <ul>
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="login.html">LOGIN</a>
+          </li>
+          <li>
+            <a href="signup.html">SIGN UP</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="mainContent">
+      <section id="mainSection">
+        <form id="frmLogin" name="frmLogin" class="login-form">
+          <fieldset>
+            <legend>Login Form</legend>
+            <div class="form-group">
+              <label for="txtUsername">Username:</label>
+              <input
+                type="text"
+                id="txtUsername"
+                name="txtUsername"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <label for="txtPassword">Password:</label>
+              <input
+                type="password"
+                id="txtPassword"
+                name="txtPassword"
+                class="form-control"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="submit"
+                value="Login"
+                id="btnLogin"
+                name="btnLogin"
+                class="form-control"
+              />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+    <footer id="footer">
+      <span>&copy; 2019 Abhijeet Karmaker</span>
+    </footer>
+  </body>
+</html>

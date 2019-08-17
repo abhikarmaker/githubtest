@@ -1,0 +1,43 @@
+#topHeader {
+    border: 2px solid blue;
+    border-radius: 10px;
+    height: 150px;
+    color: brown;
+    padding: 10px 10px;
+    margin: 5px 5px;
+    background-image: url('images/backgroundImage1.jpg');
+  }
+  #topHeader img {
+    height: 150px;
+    width: 150px;
+  }
+  #topNav ul {
+    list-style: none;
+    color: orange;
+    float: right;
+  }
+  #topNav ul li {
+    color: orange;
+    display: inline;
+  }
+  #topNav a{
+
+  }
+  #mainContent {
+    border: 2px solid blue;
+    border-radius: 10px;
+    min-height: 500px;
+    color: brown;
+    padding: 10px 10px;
+    margin: 5px 5px;
+  }
+  
+  #footer {
+    border: 2px solid blue;
+    border-radius: 10px;
+    height: 100px;
+    color: brown;
+    padding: 10px 10px;
+    margin: 5px 5px;
+  }
+  
